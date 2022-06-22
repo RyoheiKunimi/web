@@ -1,0 +1,140 @@
+/* define web font */
+@font-face {
+	font-family: 'Oswald';
+	src: url(../font/Oswald/static/Oswald-SemiBold.ttf);
+}
+
+/* color variable */
+$mainColor: rgba(#A42222,0.75);
+$btnColor: rgba(#C04343,0.5);
+
+*{
+    margin: 0;
+}
+
+html ,body{
+    margin: 0;
+    padding: 0;
+	font-family: Oswald;
+    color: #FFFFFF;
+}
+
+header{
+    width: 100%;
+    height: 8vh;
+    background-color: $mainColor;
+    position: fixed;
+    z-index: 100;
+
+    .header__contents{
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .header__side{
+            margin: 2% 1vh;
+            height: 6vh;
+            width: 6vh;
+
+            button{
+                width: 100%;
+                height: 100%;
+                border-radius: 10%;
+                background-color: $btnColor;
+                span{
+                    background-color: #F6DDC6;
+                    height: 0.15em;
+                    width: 4vh;
+                    display: block;
+                }
+                span:not(:last-child) {
+                    margin-bottom: 1vh;
+                }
+
+            }
+        }
+        .header__text{
+            height: 100%;
+            font-weight: bold;
+            font-size: 2vh;
+            margin-top: 1vh;
+            filter: drop-shadow(2px 2px 6px #000000);
+            p {
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+        }
+    }
+}
+
+.top__section{
+    height: 100vh;
+    background-color: #F6DDC6;
+    #top__img__01{
+        width: 90%;
+        height: 90%;
+        margin-top: 8vh;
+        margin-left: 5%;
+    }
+}
+
+.profile__section{
+    height: 100vh;
+    background-color: #CF6F6F;
+
+    .profile__title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 22vh;
+        text-align: center;
+        font-size: 38px;
+        filter: drop-shadow(2px 2px 6px #000000);
+    }
+
+    .profile__image{
+        display: flex;
+        height: 32vh;
+        justify-content: space-between;
+        align-items: center;
+
+        #prof__img__01{
+            width: 100%;
+            position: absolute;
+        }
+        span{
+            position: relative;
+            color: rgba(217,217,217,0.4);
+            filter: drop-shadow(2px 2px 6px #000000);
+        }
+        .left__arrow{
+            margin-left: 2%;
+        }
+        .right__arrow{
+            margin-right: 2%;
+        }
+    }
+
+    .profile__text{
+        margin-top: 4vh;
+        text-align: center;
+        .top__text{
+            filter: drop-shadow(2px 2px 6px #000000);
+            font-size: 4vh;
+            height: 8vh;
+        }
+
+        .concept__text{
+            filter: drop-shadow(2px 2px 6px #000000);
+            font-size: 3vh;
+            height: 8vh;
+        }
+
+        .detail__text{
+            filter: drop-shadow(2px 2px 6px #000000);
+            font-size: 2vh;
+            height: 3vh;
+        }
+    }
+}

@@ -1,0 +1,130 @@
+.sns__section {
+  height: 812px;
+  width: 375px;
+  /*    display: flex;
+    justify-content: center;
+    align-items: center;*/
+  background-color: #F6DDC6;
+}
+
+.sns__section .sns__title {
+  height: 20%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-filter: drop-shadow(2px 2px 6px #000000);
+          filter: drop-shadow(2px 2px 6px #000000);
+}
+
+.sns__section .sns__title p {
+  font-size: 50px;
+  text-align: center;
+}
+
+.sns__section .sns__content {
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sns__section .sns__content .sns__item__list {
+  width: 100%;
+}
+
+.sns__section .sns__content .sns__item__list .sns__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
+  width: 90%;
+  margin-left: 5%;
+  border-radius: 5px 5px 5px 5px;
+  -webkit-filter: drop-shadow(2px 2px 6px #000000);
+          filter: drop-shadow(2px 2px 6px #000000);
+  background-color: white;
+}
+
+.sns__section .sns__content .sns__item__list .sns__item .sns__left__content {
+  height: 100%;
+  width: 20%;
+  margin-left: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sns__section .sns__content .sns__item__list .sns__item .sns__left__content .sns__icon {
+  height: 100%;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #cf6f6f;
+}
+
+.sns__section .sns__content .sns__item__list .sns__item .sns__center__content {
+  width: 60%;
+}
+
+.sns__section .sns__content .sns__item__list .sns__item .sns__center__content p {
+  color: #696565;
+  text-align: center;
+}
+
+.sns__section .sns__content .sns__item__list .sns__item .sns__right__content {
+  height: 69px;
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sns__section .sns__content .sns__item__list .sns__item .sns__right__content .sns__link__button {
+  height: 24px;
+  width: 48px;
+  margin-right: 5%;
+  border-radius: 12px 12px 12px 12px;
+  background-color: white;
+  -webkit-filter: drop-shadow(2px 2px 6px #000000);
+          filter: drop-shadow(2px 2px 6px #000000);
+}
+
+.sns__section .sns__content .sns__item__list .sns__item .sns__right__content .sns__link__button img {
+  height: 11px;
+  width: 12px;
+}
+
+.sns__section .sns__content .sns__item__list .sns__item:first-child {
+  margin-top: 10%;
+}
+
+.sns__section .sns__content .sns__item__list .sns__item:not(:last-child) {
+  margin-bottom: 20%;
+}
+/*# sourceMappingURL=top.css.map */

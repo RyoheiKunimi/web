@@ -18,13 +18,24 @@ html, body {
 
 header {
   width: 100%;
-  height: 8vh;
+  height: 10%;
   background-color: rgba(164, 34, 34, 0.75);
   position: fixed;
   z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header .header__contents {
+  height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,10 +72,8 @@ header .header__contents .header__side button span:not(:last-child) {
 }
 
 header .header__contents .header__text {
-  height: 100%;
   font-weight: bold;
-  font-size: 2vh;
-  margin-top: 1vh;
+  font-size: 100%;
   -webkit-filter: drop-shadow(2px 2px 6px #000000);
           filter: drop-shadow(2px 2px 6px #000000);
 }
@@ -72,98 +81,5 @@ header .header__contents .header__text {
 header .header__contents .header__text p {
   margin-bottom: 0px;
   margin-top: 0px;
-}
-
-.top__section {
-  height: 100vh;
-  background-color: #F6DDC6;
-}
-
-.top__section #top__img__01 {
-  width: 90%;
-  height: 90%;
-  margin-top: 8vh;
-  margin-left: 5%;
-}
-
-.profile__section {
-  height: 100vh;
-  background-color: #CF6F6F;
-}
-
-.profile__section .profile__title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 22vh;
-  text-align: center;
-  font-size: 38px;
-  -webkit-filter: drop-shadow(2px 2px 6px #000000);
-          filter: drop-shadow(2px 2px 6px #000000);
-}
-
-.profile__section .profile__image {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 32vh;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.profile__section .profile__image #prof__img__01 {
-  width: 100%;
-  position: absolute;
-}
-
-.profile__section .profile__image span {
-  position: relative;
-  color: rgba(217, 217, 217, 0.4);
-  -webkit-filter: drop-shadow(2px 2px 6px #000000);
-          filter: drop-shadow(2px 2px 6px #000000);
-}
-
-.profile__section .profile__image .left__arrow {
-  margin-left: 2%;
-}
-
-.profile__section .profile__image .right__arrow {
-  margin-right: 2%;
-}
-
-.profile__section .profile__text {
-  margin-top: 4vh;
-  text-align: center;
-}
-
-.profile__section .profile__text .top__text {
-  -webkit-filter: drop-shadow(2px 2px 6px #000000);
-          filter: drop-shadow(2px 2px 6px #000000);
-  font-size: 4vh;
-  height: 8vh;
-}
-
-.profile__section .profile__text .concept__text {
-  -webkit-filter: drop-shadow(2px 2px 6px #000000);
-          filter: drop-shadow(2px 2px 6px #000000);
-  font-size: 3vh;
-  height: 8vh;
-}
-
-.profile__section .profile__text .detail__text {
-  -webkit-filter: drop-shadow(2px 2px 6px #000000);
-          filter: drop-shadow(2px 2px 6px #000000);
-  font-size: 2vh;
-  height: 3vh;
 }
 /*# sourceMappingURL=header.css.map */

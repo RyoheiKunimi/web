@@ -1,9 +1,109 @@
+/** top section **/
+.top__section {
+  height: 812px;
+  background-color: #F6DDC6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top__section #top__img__01 {
+  width: 90%;
+  aspect-ratio: 460 / 929;
+}
+
+/** profile section **/
+.profile__section {
+  height: 100vh;
+  background-color: #CF6F6F;
+}
+
+.profile__section .profile__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 22vh;
+  text-align: center;
+  font-size: 38px;
+  -webkit-filter: drop-shadow(2px 2px 6px #000000);
+          filter: drop-shadow(2px 2px 6px #000000);
+}
+
+.profile__section .profile__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 32vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile__section .profile__image #prof__img__01 {
+  width: 100%;
+  position: absolute;
+}
+
+.profile__section .profile__image span {
+  position: relative;
+  color: rgba(217, 217, 217, 0.4);
+  -webkit-filter: drop-shadow(2px 2px 6px #000000);
+          filter: drop-shadow(2px 2px 6px #000000);
+}
+
+.profile__section .profile__image .left__arrow {
+  margin-left: 2%;
+}
+
+.profile__section .profile__image .right__arrow {
+  margin-right: 2%;
+}
+
+.profile__section .profile__text {
+  margin-top: 4vh;
+  text-align: center;
+}
+
+.profile__section .profile__text .top__text {
+  -webkit-filter: drop-shadow(2px 2px 6px #000000);
+          filter: drop-shadow(2px 2px 6px #000000);
+  font-size: 4vh;
+  height: 8vh;
+}
+
+.profile__section .profile__text .concept__text {
+  -webkit-filter: drop-shadow(2px 2px 6px #000000);
+          filter: drop-shadow(2px 2px 6px #000000);
+  font-size: 3vh;
+  height: 8vh;
+}
+
+.profile__section .profile__text .detail__text {
+  -webkit-filter: drop-shadow(2px 2px 6px #000000);
+          filter: drop-shadow(2px 2px 6px #000000);
+  font-size: 2vh;
+  height: 3vh;
+}
+
+/** sns section **/
 .sns__section {
   height: 812px;
   width: 100%;
-  /*    display: flex;
-    justify-content: center;
-    align-items: center;*/
   background-color: #F6DDC6;
 }
 

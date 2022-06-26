@@ -11,50 +11,94 @@
   <!-- header -->
   <header>
     <div class="header__contents">
-        <div class="header__side">
-           <button>
-                <span></span>
-                <span></span>
-                <span></span>
-           </button>
+
+        <div class="header__background"></div>
+
+        <div class="header__title">
+            <div class="header__title__text">
+                <p>杨 晨 晨 Yome</p>
+                <p>SNS链接网站</p>
+            </div>
         </div>
-        <div class="header__text">
-            <p>杨 晨 晨 Yome</p>
-            <p>SNS链接网站</p>
+
+        <div class="header__btn__area">
+            <button
+            onclick="document.querySelector('nav').classList.toggle('hide__menu')">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
-        <div class="header__side"></div>
     </div>
+
+    <!-- side menu -->
+    <nav class="side__menu hide__menu"
+        onclick="document.querySelector('nav').classList.toggle('hide__menu')">
+        <div class="side__menu__contents">
+            <div class="side__menu__contents__item__list">
+                <p class="side__menu__item"><a href="#top">Top</a></p>
+                <p class="side__menu__item"><a href="#profile">概況</a></p>
+                <p class="side__menu__item"><a href="#sns">SNS</a></p>
+            </div>
+        </div>
+    </nav>
+
+    <!-- button -->
+    <!-- <div class="header__btn__area" style="z-index: 50;">
+        <button
+        onclick="document.querySelector('nav').classList.toggle('hide__menu')">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div> -->
+
+    <!-- <div class="header__background"> -->
+    <!--
+        <button
+        onclick="document.querySelector('nav').classList.toggle('hide__menu')">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <!--header contents -->
+    <!--
+        <div class="header__contents">
+            <div class="header__text">
+                <p>杨 晨 晨 Yome</p>
+                <p>SNS链接网站</p>
+            </div>
+        </div>
+    -->
+    <!-- </div> -->
+
+
+
+    <!--side menu -->
+<!--
+    <nav style="z-index: 30;" class="side__menu hide__menu">
+        <div class="side__menu__body">
+            <div class="side__menu__item__list">
+                <p class="side__menu__item"><a href="#top">Top</a></p>
+                <p class="side__menu__item"><a href="#profile">概況</a></p>
+                <p class="side__menu__item"><a href="#sns">SNS</a></p>
+            </div>
+        </div>
+    </nav>
+-->
   </header>
-
-  <!--side menu -->
-  <nav class="side__menu">
-
-    <div class="side__menu__top">
-        <div class="hamburger__icon__close">
-            <button></button>
-        </div>
-    </div>
-
-    <div class="side__menu__body">
-        <div class="side__menu__item__list">
-            <p class="side__menu__item"><a>Top</a></p>
-            <p class="side__menu__item"><a>概況</a></p>
-            <p class="side__menu__item"><a>SNS</a></p>
-        </div>
-    </div>
-  </nav>
 
   <!-- body -->
   <body>
     <div class="body__content">
 
         <!-- 1st section -->
-        <section class="top__section">
+        <section id="top" class="top__section">
             <img id="top__img__01" src="./img/pics/top__0001.png"></img>
         </section>
 
         <!-- 2nd section -->
-        <section class="profile__section">
+        <section id="profile" class="profile__section">
             <h1 class="profile__title">
                 <p>概況</p>
             </h1>
@@ -78,7 +122,7 @@
         </section>
 
         <!-- 3rd section -->
-        <section class="sns__section">
+        <section id="sns" class="sns__section">
             <div class="sns__title">
                 <p>SNS</p>
             </div>

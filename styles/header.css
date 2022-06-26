@@ -17,99 +17,126 @@ html, body {
 }
 
 header {
-  width: 100%;
-  height: 10%;
-  background-color: rgba(164, 34, 34, 0.75);
-  position: fixed;
+  width: 390px;
+  height: 80px;
   z-index: 100;
+  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 header .header__contents {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+header .header__background {
+  background-color: rgba(164, 34, 34, 0.75);
+  position: absolute;
   height: 100%;
   width: 100%;
+}
+
+header .header__btn__area {
+  position: absolute;
+  z-index: 40;
+  height: 80px;
+  width: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-header .header__contents .header__side {
-  margin: 2% 1vh;
-  height: 6vh;
-  width: 6vh;
-}
-
-header .header__contents .header__side button {
-  width: 100%;
-  height: 100%;
+header .header__btn__area button {
+  width: 40px;
+  height: 40px;
+  padding: 0;
   border-radius: 10%;
   background-color: rgba(192, 67, 67, 0.5);
 }
 
-header .header__contents .header__side button span {
+header .header__btn__area button span {
   background-color: #F6DDC6;
-  height: 0.15em;
-  width: 4vh;
+  height: 4px;
+  width: 30px;
+  margin: 0 auto;
   display: block;
 }
 
-header .header__contents .header__side button span:not(:last-child) {
-  margin-bottom: 1vh;
+header .header__btn__area button span:not(:first-child) {
+  margin-top: 5px;
 }
 
-header .header__contents .header__text {
+header .header__title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100px;
+  margin: auto;
+}
+
+header .header__title__text {
   font-weight: bold;
   font-size: 100%;
   -webkit-filter: drop-shadow(2px 2px 6px #000000);
           filter: drop-shadow(2px 2px 6px #000000);
+  margin-top: 30px;
 }
 
-header .header__contents .header__text p {
+header .header__title__text p {
   margin-bottom: 0px;
   margin-top: 0px;
 }
 
 .side__menu {
-  width: 206px;
-  height: 100%;
+  width: 390px;
+  height: 812px;
   position: fixed;
-  z-index: 150;
+  z-index: 30;
+}
+
+.side__menu__contents {
+  width: 206px;
+  height: 812px;
   background-color: rgba(208, 93, 93, 0.48);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.side__menu .side__menu__top {
-  width: 100%;
-  height: 10%;
+.side__menu__contents__item__list {
+  margin-top: -200px;
 }
 
-.side__menu .side__menu__body {
-  width: 80%;
-  height: 90%;
-  margin-left: 10%;
-}
-
-.side__menu .side__menu__body .side__menu__item__list .side__menu__item {
+.side__menu__contents__item__list .side__menu__item {
   text-align: center;
   font-size: 30px;
-  height: 10%;
+  height: 30px;
+  margin-bottom: 100px;
   width: 100%;
 }
 
-.side__menu .side__menu__body .side__menu__item__list .side__menu__item:first-child {
-  margin-top: 100px;
+.side__menu__contents__item__list .side__menu__item:last-child {
+  margin-bottom: 0;
+}
+
+.hide__menu {
+  display: none;
 }
 /*# sourceMappingURL=header.css.map */

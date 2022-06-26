@@ -2,12 +2,17 @@
 
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8"/>
+
+    <!-- style -->
     <link href="./styles/reset.css" rel="stylesheet">
     <link href="./styles/normalize.css" rel="stylesheet">
     <link href="./styles/header.css" rel="stylesheet">
     <link href="./styles/top.css" rel="stylesheet">
     <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
+    <!-- javascript -->
+    <script src="./js/headerScript.js"></script>
+
   </head>
 
   <!-- header -->
@@ -24,8 +29,8 @@
         </div>
 
         <div class="header__btn__area">
-            <button
-            onclick="document.querySelector('nav').classList.toggle('hide__menu')">
+            <button id="humburger__button" class="active__icon"
+              onclick="toggleHeader();document.querySelector('nav').classList.toggle('hide__menu')">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -35,7 +40,7 @@
 
     <!-- side menu -->
     <nav class="side__menu hide__menu"
-        onclick="document.querySelector('nav').classList.toggle('hide__menu')">
+        onclick="toggleHeader();document.querySelector('nav').classList.toggle('hide__menu');">
         <div class="side__menu__contents">
             <div class="side__menu__contents__item__list">
                 <p class="side__menu__item"><a href="#top">Top</a></p>
@@ -131,27 +136,6 @@
                         </div>
                     </div>
 
-                    <!-- weibo -->
-                    <div class="sns__item">
-                        <div class="sns__left__content">
-                            <div class="sns__icon">
-                                <i class="fab fa-4x fa-weibo"></i>
-                            </div>
-                        </div>
-                        <div class="sns__center__content">
-                            <div class="sns__id">
-                                <p>杨橙橙Yome</p>
-                            </div>
-                        </div>
-                        <div class="sns__right__content">
-                            <button class="sns__link__button">
-                                <a href="https://weibo.com/u/5737304133">
-                                    <img src="./img/icon/link-solid.svg">
-                                </a>
-                            </button>
-                        </div>
-                    </div>
-
                     <!-- instagram__assistant -->
                     <div class="sns__item">
                         <div class="sns__left__content">
@@ -167,6 +151,27 @@
                         <div class="sns__right__content">
                             <button class="sns__link__button">
                                 <a href="https://www.instagram.com/yangchengcheng0107/">
+                                    <img src="./img/icon/link-solid.svg">
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- weibo -->
+                    <div class="sns__item">
+                        <div class="sns__left__content">
+                            <div class="sns__icon">
+                                <i class="fab fa-4x fa-weibo"></i>
+                            </div>
+                        </div>
+                        <div class="sns__center__content">
+                            <div class="sns__id">
+                                <p>杨橙橙Yome</p>
+                            </div>
+                        </div>
+                        <div class="sns__right__content">
+                            <button class="sns__link__button">
+                                <a href="https://weibo.com/u/5737304133">
                                     <img src="./img/icon/link-solid.svg">
                                 </a>
                             </button>

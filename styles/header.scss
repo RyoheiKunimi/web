@@ -48,7 +48,7 @@ header{
         justify-content: center;
         align-items: center;
 
-        button{
+        #humburger__button{
             width: 40px;
             height: 40px;
             padding: 0;
@@ -61,12 +61,28 @@ header{
                 width: 30px;
                 margin: 0 auto;
                 display: block;
+                transition: transform 0.7s;
             }
 
             span:not(:first-child){
                 margin-top: 5px;
             }
         }
+
+        .inactive__icon{
+            span:nth-child(1){
+                transform: translateY(10px) rotate(135deg);
+            }
+
+            span:nth-child(2){
+                transform: translateY(0px) scaleX(0);
+            }
+
+            span:nth-child(3){
+                transform: translateY(-8px) rotate(-135deg);
+            }
+        }
+
     }
 
     .header__title{
